@@ -11,7 +11,7 @@
                         <h3 class="font-weight-bold">500</h3>
                     </div>
                     <div class="ml-auto">
-                        <i class="fa fa-folder-o crd-icon text-secondary"></i>
+                        <i class="fa fa-folder-open crd-icon text-secondary"></i>
                     </div>
                 </div>
             </div>

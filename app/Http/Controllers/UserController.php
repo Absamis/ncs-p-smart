@@ -24,9 +24,10 @@ class UserController extends Controller
         return "Login successful";
     }
 
-    public function getTeamMembers(){
+    public function getTeamMembers(User $user){
         // $data = User::where("role", StatusEnums::$userTeamRole)->get();
         // return $data;
+        return view("team-member-details");
         return view("teams");
     }
 

@@ -1,5 +1,5 @@
 @extends("layouts.app")
-@section("title", "Teams")
+@section("title", "Team")
 @section("content")
 <!-- Booking Modal -->
 <div class="modal" id="withdrawModal">
@@ -54,7 +54,7 @@
 <div class="abs-table-wrapper">
     <table class="table table-striped">
         <thead>
-            <th>Firstname</th>
+            <th>First name</th>
             <th>Last name</th>
             <th>Email Address</th>
             <th>Status</th>

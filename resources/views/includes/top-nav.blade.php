@@ -17,7 +17,7 @@
                 Profile
             </button> -->
             <div class="dropdown-menu dropdown-menu-right " aria-labelledby="my-dropdown">
-                <a class="dropdown-item " href="#">
+                <a class="dropdown-item " href="{{route("profile")}}">
                     <span class="fa fa-user text-color"></span>
                     <span class="ml-2">Profile</span>
                 </a>

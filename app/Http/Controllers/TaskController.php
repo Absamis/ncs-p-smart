@@ -53,6 +53,10 @@ class TaskController extends Controller
 
     }
 
+    public function taskReview(){
+        return view("task-review");
+    }
+
     public function reviewUserTask(Request $request, UserTaskActivity $activity){
 
     }

@@ -10,15 +10,17 @@ use Illuminate\Http\Request;
 class ProjectController extends Controller
 {
     //
-    public function getProjects(Project $project = null){
-        // if($project){
-        //     $data = $project->with(["tasks" => function($query){
-        //         $query->with("user");
-        //     }])->first();
-        // }else{
-        //     $data = Project::all();
-        // }
-        return view("projects");
+    public function getProjects(int $project = null){
+        return view("project-details");
+        if($project){
+            $data = $project->with(["tasks" => function($query){
+                $query->with("user");
+            }])->first();
+            return view("project-details");
+        }else{
+            $data = Project::all();
+            return view("projects");
+        }
     }
 
     public function changeProjectStatus(Request $request, Project $project){
