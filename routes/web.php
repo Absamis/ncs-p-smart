@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get("/dashboard", [PageController::class, "dashboard"])->name("dashboard");
+
+Route::get("teams", [UserController::class, "getTeamMembers"])->name("teams");
+
+Route::get("projects", [ProjectController::class, "getProjects"])->name("projects");
+
+Route::get("profile", [UserController::class, "userProfile"])->name("profile");
